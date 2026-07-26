@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MainCrafts Landing Page</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container">
+
+<div class="logo"><img alt="Maincrafts Technology" src="images/Main_Craft_Technology_Logo.png" /></div>
+
+<nav class="nav-links" id="top-nav-links">
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#features">Features</a></li>
+
+<li>
+
+<a href="#">Services <i class="fa fa-caret-down"></i></a>
+
+<ul class="dropdown">
+
+<li><a href="#">Web Design</a></li>
+
+<li><a href="#">App Development</a></li>
+
+<li><a href="#">UI/UX Design</a></li>
+
+<li><a href="#">SEO Marketing</a></li>
+
+</ul>
+
+</li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+<button class="mobile-toggle" id="mobile-toggle" onclick="toggleFunction()">
+    <span class="menu-bar">&#9776;</span>
+    <span class="menu-close">&#9747;</span>
+</button>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section id="hero">
+<div class="container">
+
+<div class="hero-content">
+
+<h1>Build Smarter with MainCrafts</h1>
+
+<p>
+Create beautiful websites, powerful applications,
+and scalable digital products that grow your business.
+</p>
+
+<a href="#" class="btn">Get Started</a>
+
+</div>
+</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section id="features">
+
+<h2>Why Choose Us?</h2>
+
+<div class="feature-container">
+
+<div class="card">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h3>Fast</h3>
+
+<p>
+Lightning-fast websites optimized for performance.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-mobile-screen"></i>
+
+<h3>Responsive</h3>
+
+<p>
+Looks perfect on Desktop, Tablet and Mobile devices.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-layer-group"></i>
+
+<h3>Scalable</h3>
+
+<p>
+Built with future-ready technologies for growth.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Secure</h3>
+
+<p>
+Modern security practices to keep your data safe.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer id="footer">
+
+<div class="footer-links">
+<a href="#">Contact</a>
+|
+<a href="#">Terms</a>
+|
+<a href="#">Privacy Policy</a>
+
+</div>
+<p>© 2026 MainCrafts. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+function toggleFunction() {
+  var x = document.getElementById("top-nav-links");
+  if (x.className === "nav-links") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav-links";
+  }
+  document.getElementById("mobile-toggle").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
